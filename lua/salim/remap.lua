@@ -24,7 +24,6 @@ vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
 
 
--- Function to open a floating terminal running lazygit
 function _G.open_floating_lazygit()
   local buf = vim.api.nvim_create_buf(false, true)
   local width = math.ceil(vim.o.columns * 0.8)
@@ -44,11 +43,7 @@ function _G.open_floating_lazygit()
     end
   })
   vim.cmd("startinsert")
-
-  -- Map 'q' to close the floating window
   vim.api.nvim_buf_set_keymap(buf, 'n', 'q', '<cmd>close!<CR>', { noremap = true, silent = true })
 end
-
--- Keymap to open floating lazygit terminal
 vim.api.nvim_set_keymap('n', '<leader>gl', ':lua open_floating_lazygit()<CR>', { noremap = true, silent = true })
 
