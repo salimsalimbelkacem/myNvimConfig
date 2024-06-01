@@ -32,12 +32,12 @@ return {
                     style = "none"
                 },
                 diagnostics = "nvim_lsp",
-                separator_style = { '',''},
-
+                separator_style = {'', ''},
                 hover = {
                     enabled = false,
                 },
             },
+
             highlights = {
                 fill = {
                     fg = '#c6d0f5',

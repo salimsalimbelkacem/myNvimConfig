@@ -9,7 +9,7 @@ return{
                 section_separators = { left = '', right = ''},
                 disabled_filetypes = {
                 },
-                ignore_focus = {"neo-tree"},
+                ignore_focus = {"neo-tree", "help"},
                 always_divide_middle = true,
                 globalstatus = false,
                 refresh = {
