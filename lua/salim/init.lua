@@ -8,4 +8,4 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.clipboard="unnamedplus"
 vim.opt.signcolumn = 'yes'
-vim.o.showmode = false
+vim.opt.showmode = false
