@@ -22,6 +22,7 @@ vim.api.nvim_set_keymap("i","'", "''<esc>i", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i",'"', '""<esc>i', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i","<", "<><esc>i", { noremap = true, silent = true })
 
 
 function _G.open_floating_lazygit()

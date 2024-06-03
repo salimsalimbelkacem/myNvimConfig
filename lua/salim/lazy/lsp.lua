@@ -23,13 +23,11 @@ return {
 
         require("fidget").setup({})
         require("mason").setup()
+
         require("mason-lspconfig").setup({
-            ensure_installed = {
-                "lua_ls",
-            },
+            ensure_installed = { "lua_ls",},
             handlers = {
                 function(server_name)
-
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
@@ -69,9 +67,8 @@ return {
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' }, -- For luasnip users.
-            }, {
-                { name = 'buffer' },
-            })
+            },
+            { { name = 'buffer' }, })
         })
 
         vim.diagnostic.config({
