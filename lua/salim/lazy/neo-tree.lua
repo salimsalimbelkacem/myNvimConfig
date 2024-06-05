@@ -15,7 +15,7 @@ return {
             close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
             popup_border_style = "rounded",
             enable_git_status = true,
-            enable_diagnostics = false,
+            enable_diagnostics = true,
             open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
             sort_case_insensitive = false, -- used when sorting files and directories in the tree
             sort_function = nil , -- use a custom function for sorting files and directories in the tree 
@@ -40,7 +40,6 @@ return {
                     icon = {
                         folder_closed = "",
                         folder_open = "",
-                        folder_empty = "",
                         -- The next two settings are only a fallback, if you use nvim-web-devicons and configure default icons there
                         -- then these will never be used.
                         default = "",
@@ -101,15 +100,10 @@ return {
                         },
                         ["S"] = "open_split",
                         ["s"] = "open_vsplit",
-
                         ["t"] = "open_tabnew",
-
                         ["w"] = "open_with_window_picker",
-
                         ["h"] = "close_node",
-
                         ["z"] = "close_all_nodes",
-
                         ["a"] = {
                             "add",
                             config = {
@@ -123,7 +117,7 @@ return {
                         ["x"] = "cut_to_clipboard",
                         ["p"] = "paste_from_clipboard",
                         ["c"] = "copy",
-                        ["m"] = "move", -- takes text input for destination, also accepts the optional config.show_path option like "add".
+                        ["m"] = "move",
                         ["q"] = "close_window",
                         ["R"] = "refresh",
                         ["?"] = "show_help",
