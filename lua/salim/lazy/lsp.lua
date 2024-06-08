@@ -8,6 +8,7 @@ return {
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
         "hrsh7th/nvim-cmp",
+        "rafamadriz/friendly-snippets",
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
@@ -46,6 +47,12 @@ return {
                             }
                         }
                     }
+                end,
+                ["clangd"] = function()
+                    require("lspconfig").clangd.setup({
+                        capabilities = capabilities,
+                        cmd = {"clangd", "--compile-commands-dir=build"}
+                    })
                 end,
             }
         })

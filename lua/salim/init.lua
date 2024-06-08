@@ -3,6 +3,7 @@ require("salim.lazy_init")
 -- TO DO:
 -- cmp pour path
 -- enelever le simbole nule teh [+] sur lualine
+-- keymap pour fermer (tout) les buffers
 
 vim.o.nu              = true
 vim.o.tabstop         = 4

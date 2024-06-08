@@ -7,8 +7,7 @@ return{
                 theme = 'catpuccin',
                 component_separators = { left = '', right = ''},
                 section_separators = { left = '', right = ''},
-                disabled_filetypes = {
-                },
+                disabled_filetypes = {},
                 ignore_focus = {"neo-tree", "help"},
                 always_divide_middle = true,
                 globalstatus = false,
@@ -22,7 +21,7 @@ return{
                 lualine_a = {'mode'},
                 lualine_b = {'branch', 'diff', 'diagnostics'},
                 lualine_c = {'filename'},
-                lualine_x = { function () return os.date("%H:%M", os.time()) end, 'fileformat', 'filetype'},
+                lualine_x = { function () return os.date("%H:%M", os.time()) end, 'filetype'},
                 lualine_y = {'progress'},
                 lualine_z = {'location'}
             },
