@@ -20,7 +20,15 @@ return{
             sections = {
                 lualine_a = {'mode'},
                 lualine_b = {'branch', 'diff', 'diagnostics'},
-                lualine_c = {'filename'},
+                lualine_c = {{
+                    'filename',
+                    file_status = true,
+                    symbols = {
+                        modified = ' ●',
+                        readonly = ' ',
+                        unnamed = '[No Name]',
+                    }
+                }},
                 lualine_x = { function () return os.date("%H:%M", os.time()) end, 'filetype'},
                 lualine_y = {'progress'},
                 lualine_z = {'location'}
