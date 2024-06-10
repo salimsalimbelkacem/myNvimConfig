@@ -16,3 +16,13 @@ vim.o.showmode        = false
 vim.o.swapfile        = false
 vim.o.backup          = false
 vim.o.termguicolors   = true
+
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldcolumn = '1'
+vim.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
+vim.o.fillchars = "fold: ,foldopen:,foldclose:,foldsep: "
+
