@@ -5,6 +5,9 @@ return {
     vim.cmd [[
         autocmd BufRead,BufNewFile *.svelte TSEnable highlight
     ]]
+    vim.cmd [[
+        autocmd BufRead,BufNewFile *.norg TSEnable highlight
+    ]]
     end
 
 }
