@@ -26,6 +26,7 @@ vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true
 
 vim.api.nvim_set_keymap("n","<leader>lm", ":Mason<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n","<leader>li", ":LspInfo<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>pl", ":Lazy<CR>", { noremap = true, silent = true })
 
 function _G.open_floating_lazygit()
   local buf = vim.api.nvim_create_buf(false, true)
