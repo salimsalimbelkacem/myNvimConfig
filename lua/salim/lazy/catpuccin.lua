@@ -6,5 +6,6 @@ return {
         require("catppuccin").setup({
         styles = { comments = {},},
         })
+        vim.cmd.colorscheme "catppuccin"
     end
 }
