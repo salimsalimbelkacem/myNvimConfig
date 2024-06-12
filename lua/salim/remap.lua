@@ -24,6 +24,8 @@ vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("i","<", "<><esc>i", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("n","<leader>lm", ":Mason<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>li", ":LspInfo<CR>", { noremap = true, silent = true })
 
 function _G.open_floating_lazygit()
   local buf = vim.api.nvim_create_buf(false, true)
@@ -46,4 +48,5 @@ function _G.open_floating_lazygit()
   vim.cmd("startinsert")
   vim.api.nvim_buf_set_keymap(buf, 'n', 'q', '<cmd>close!<CR>', { noremap = true, silent = true })
 end
+
 vim.api.nvim_set_keymap('n', '<leader>gl', ':lua open_floating_lazygit()<CR>', { noremap = true, silent = true })
