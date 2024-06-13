@@ -16,13 +16,6 @@ vim.api.nvim_set_keymap("n","<C-,>", "<C-w>h", { noremap = true, silent = true }
 vim.api.nvim_set_keymap("i","<C-;>", "<C-w>l", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","<C-,>", "<C-w>h", { noremap = true, silent = true })
 
--- vim.api.nvim_set_keymap("i","(", "()<esc>i", { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i","{", "{}<esc>i", { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i","'", "''<esc>i", { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i",'"', '""<esc>i', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
-
 vim.api.nvim_set_keymap("n","<leader>lm", ":Mason<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n","<leader>li", ":LspInfo<CR>", { noremap = true, silent = true })
 
