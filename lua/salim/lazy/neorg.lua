@@ -8,7 +8,6 @@ return {
         "nvim-neorg/neorg",
         dependencies = { "luarocks.nvim" },
         -- put any other flags you wanted to pass to lazy here!
-        build = ":Neorg sync-parsers",
         opts = {},
         config = function()
             require("neorg").setup({
