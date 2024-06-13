@@ -16,13 +16,12 @@ vim.api.nvim_set_keymap("n","<C-,>", "<C-w>h", { noremap = true, silent = true }
 vim.api.nvim_set_keymap("i","<C-;>", "<C-w>l", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","<C-,>", "<C-w>h", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("i","(", "()<esc>i", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","{", "{}<esc>i", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","'", "''<esc>i", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i",'"', '""<esc>i', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
--- vim.api.nvim_set_keymap("i","<", "<><esc>i", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i","(", "()<esc>i", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i","{", "{}<esc>i", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i","'", "''<esc>i", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i",'"', '""<esc>i', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i","[", "[]<esc>i", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i","/*", "/**/<esc>hi", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n","<leader>lm", ":Mason<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n","<leader>li", ":LspInfo<CR>", { noremap = true, silent = true })
@@ -31,6 +30,7 @@ vim.api.nvim_set_keymap("n","<leader>pl", ":Lazy<CR>", { noremap = true, silent 
 vim.api.nvim_set_keymap("n","<leader>ps", ":Lazy sync<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n","q:", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v","q", "<esc>", { noremap = true, silent = true })
 
 function _G.open_floating_lazygit()
     local buf = vim.api.nvim_create_buf(false, true)
