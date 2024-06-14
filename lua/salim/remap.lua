@@ -1,14 +1,14 @@
 vim.g.mapleader = " "
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.api.nvim_set_keymap("n","<A-j>", ":m .+1<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n","<A-k>", ":m .-2<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<A-j>", "<cmd>m .+1<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<A-k>", "<cmd>m .-2<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("i","<A-j>", "<esc>:m .+1<CR>==gi", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","<A-k>", "<esc>:m .-2<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i","<A-j>", "<esc><cmd>m .+1<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i","<A-k>", "<esc><cmd>m .-2<CR>==gi", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("v","<A-j>", ":m '>+1<CR>gv==gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v","<A-k>", ":m '<-2<CR>gv==gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v","<A-j>", "<cmd>m '>+1<CR>gv==gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v","<A-k>", "<cmd>m '<-2<CR>gv==gv", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n","<C-;>", "<C-w>l", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n","<C-,>", "<C-w>h", { noremap = true, silent = true })
@@ -16,13 +16,13 @@ vim.api.nvim_set_keymap("n","<C-,>", "<C-w>h", { noremap = true, silent = true }
 vim.api.nvim_set_keymap("i","<C-;>", "<C-w>l", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","<C-,>", "<C-w>h", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n","<leader>lm", ":Mason<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n","<leader>li", ":LspInfo<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>lm", "<cmd>Mason<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>li", "<cmd>LspInfo<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n","<leader>pl", ":Lazy<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n","<leader>ps", ":Lazy sync<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>pl", "<cmd>Lazy<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n","<leader>ps", "<cmd>Lazy sync<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n","q:", "", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n","q:", "", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v","q", "<esc>", { noremap = true, silent = true })
 
 function _G.open_floating_lazygit()
@@ -47,4 +47,4 @@ function _G.open_floating_lazygit()
     vim.api.nvim_buf_set_keymap(buf, 'n', 'q', '<cmd>close!<CR>', { noremap = true, silent = true })
 end
 
-vim.api.nvim_set_keymap('n', '<leader>gl', ':lua open_floating_lazygit()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gl', '<cmd>lua open_floating_lazygit()<CR>', { noremap = true, silent = true })
