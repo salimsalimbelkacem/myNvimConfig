@@ -8,8 +8,6 @@ return {
         -- "3rd/image.nvim",
     },
     config = function ()
-        vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree toggle<CR>', { noremap = true, silent = true })
-        vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree action=focus<CR>', { noremap = true, silent = true })
 
         require("neo-tree").setup({
             close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
