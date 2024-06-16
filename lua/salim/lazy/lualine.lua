@@ -26,7 +26,7 @@ return{
                     symbols = {
                         modified = ' ●',
                         readonly = ' ',
-                        unnamed = '[No Name]',
+                        unnamed = 'guess',
                     }
                 }},
                 lualine_x = { function () return os.date("%H:%M", os.time()) end, 'filetype'},
