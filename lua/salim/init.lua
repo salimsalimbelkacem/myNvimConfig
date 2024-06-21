@@ -4,8 +4,6 @@ require("salim.lazy_init")
 require("salim.remap")
 --[[ 
  TO DO:
-- [ ]   on change de plugin pour dashboard vu
-            qu'on peux pas changer de couler.
 - [x]   enregistrer les undo
  ]]
 
