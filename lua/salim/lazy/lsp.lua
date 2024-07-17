@@ -57,6 +57,8 @@ return {
             }
         })
 
+        require("luasnip.loaders.from_vscode").lazy_load() -- Load snippets from friendly-snippets
+
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
         cmp.setup({
@@ -71,14 +73,18 @@ return {
                 ['<CR>'] = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             }),
-            sources = cmp.config.sources({
-                { name = 'nvim_lsp' },
-                { name = 'nvim_lua' },
-                { name = 'treesitter' },
-                { name = 'path' },
-                { name = 'luasnip' }, -- For luasnip users.
-            },
-            { { name = 'buffer' }, })
+            sources = cmp.config.sources(
+                {
+                    { name = 'nvim_lsp' },
+                    { name = 'nvim_lua' },
+                    { name = 'treesitter' },
+                    { name = 'path' },
+                    { name = 'luasnip' },
+                },
+                {
+                    { name = 'buffer' },
+                }
+            )
         })
 
         vim.diagnostic.config({

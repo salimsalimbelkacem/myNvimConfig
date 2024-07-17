@@ -1,6 +1,14 @@
 -- * remaps
 vim.api.nvim_set_keymap("v","q", "<esc>", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("n","<S-p>", "k<esc>p", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('v', 'j', 'gj', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'k', 'gk', { noremap = true, silent = true })
+
 -- ** move lines
 vim.api.nvim_set_keymap("i","<A-j>", "<esc><cmd>m .+1<CR>==gi", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i","<A-k>", "<esc><cmd>m .-2<CR>==gi", { noremap = true, silent = true })

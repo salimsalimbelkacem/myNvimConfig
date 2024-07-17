@@ -29,8 +29,11 @@ return{
                         unnamed = 'guess',
                     }
                 }},
-                lualine_x = { function () return os.date("%H:%M", os.time()) end, 'filetype'},
-                lualine_y = {'progress'},
+                lualine_x = {
+                    function () return os.date("%H:%M", os.time()) end,
+                    'filetype'
+                },
+                lualine_y = { 'progress' },
                 lualine_z = {'location'}
             },
             inactive_sections = {

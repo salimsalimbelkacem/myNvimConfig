@@ -5,12 +5,11 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
         "MunifTanjim/nui.nvim",
-        -- "3rd/image.nvim",
+        "3rd/image.nvim",
     },
     config = function ()
         vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree action=focus<CR>', { noremap = true, silent = true })
         vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree toggle<CR>',       { noremap = true, silent = true })
-        vim.api.nvim_set_keymap('n', '<leader>b', '<cmd>Neotree buffers toggle<CR>',       { noremap = true, silent = true })
 
         require("neo-tree").setup({
             close_if_last_window = true,
@@ -82,13 +81,7 @@ return {
                         ["<cr>"] = "open",
                         ["l"] = "open",
                         ["<esc>"] = "cancel",
-                        ["P"] = {
-                            "toggle_preview",
-                            config = {
-                                use_float = true,
-                                use_image_nvim = true
-                            }
-                        },
+                        ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
                         ["S"] = "open_split",
                         ["s"] = "open_vsplit",
                         ["t"] = "open_tabnew",

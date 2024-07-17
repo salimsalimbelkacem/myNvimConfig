@@ -1,12 +1,5 @@
 vim.g.mapleader = " "
 
-require("salim.lazy_init")
-require("salim.remap")
---[[ 
- TO DO:
-- [x]   enregistrer les undo
- ]]
-
 vim.o.termguicolors  = true
 vim.o.signcolumn     = 'yes'
 vim.o.clipboard      = "unnamedplus"
@@ -32,3 +25,5 @@ vim.o.fillchars      = "foldopen:,foldclose:,foldsep: "
 vim.o.foldexpr       = "nvim_treesitter#foldexpr()"
 vim.foldlevel        = 99
 
+require("salim.lazy_init")
+require("salim.remap")
