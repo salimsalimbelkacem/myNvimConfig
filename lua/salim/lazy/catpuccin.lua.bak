@@ -4,7 +4,10 @@ return {
     priority = 1000,
     config = function ()
         require("catppuccin").setup({
-        styles = { comments = {},},
+            styles = {
+                comments = {},
+            },
+            transparent_background = true,
         })
         vim.cmd.colorscheme "catppuccin"
     end

@@ -51,7 +51,7 @@ return {
                 ["clangd"] = function()
                     require("lspconfig").clangd.setup({
                         capabilities = capabilities,
-                        cmd = {"clangd", "--compile-commands-dir=build"}
+                        cmd = {"clangd"}
                     })
                 end,
             }
