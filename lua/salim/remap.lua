@@ -3,6 +3,8 @@ vim.api.nvim_set_keymap("v","q", "<esc>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n","<S-p>", "k<esc>p", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("n","<leader>ts", "<cmd>vs term://sh<CR>", { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
@@ -21,11 +23,6 @@ vim.api.nvim_set_keymap("v","<A-k>", "<cmd>m '<-2<CR>gv==gv", { noremap = true, 
 
 vim.api.nvim_set_keymap("n","<A-j>", "<cmd>m .+1<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n","<A-k>", "<cmd>m .-2<CR>", { noremap = true, silent = true })
-
--- ** select line
-vim.api.nvim_set_keymap("n","<C-l>", "0v$", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v","<C-l>", "<esc>0v$", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i","<C-l>", "<esc>0v$", { noremap = true, silent = true })
 
 -- ** open lsp tools
 vim.api.nvim_set_keymap("n","<leader>li", "<cmd>LspInfo<CR>", { noremap = true, silent = true })

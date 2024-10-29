@@ -5,6 +5,7 @@ vim.o.signcolumn     = 'yes'
 vim.o.clipboard      = "unnamedplus"
 vim.o.showmode       = false
 vim.o.nu             = true
+vim.o.relativenumber = true
 
 vim.o.undofile       = true
 vim.o.undodir        = "/home/salim/.vim/vimundo"
