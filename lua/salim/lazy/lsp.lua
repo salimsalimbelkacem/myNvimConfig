@@ -54,6 +54,20 @@ return {
                         cmd = {"clangd"}
                     })
                 end,
+    ["pyright"] = function()
+                        require'lspconfig'.pyright.setup{
+                            cmd = { "pyright-langserver", "--stdio" },
+                            filetypes = { "python" },
+                            settings = {
+                                python = {
+                                    pythonfile = "/home/salim/.venv/bin/python",
+                                    analysis = {
+                                        extraPaths = { "/home/salim/.venv/lib/python3.12/site-packages" }
+                                    }
+                                }
+                            }
+                        }
+                    end,
             }
         })
 
