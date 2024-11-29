@@ -5,7 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
         "MunifTanjim/nui.nvim",
-        "3rd/image.nvim",
+	--        "3rd/image.nvim",
     },
     config = function ()
         vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree action=focus<CR>', { noremap = true, silent = true })

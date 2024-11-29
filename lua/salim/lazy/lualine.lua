@@ -4,9 +4,8 @@ return{
         require('lualine').setup {
             options = {
                 icons_enabled = true,
-                theme = 'gruvbox',
-                component_separators = { left = '', right = ''},
-                section_separators = { left = '', right = ''},
+                component_separators = { left = '', right = ''},
+                section_separators = { left = '', right = ''},
                 disabled_filetypes = {},
                 ignore_focus = {"NvimTree", "neo-tree", "help"},
                 always_divide_middle = true,
@@ -26,14 +25,13 @@ return{
                     symbols = {
                         modified = ' ●',
                         readonly = ' ',
-                        unnamed = 'guess',
+                        unnamed = '',
                     }
                 }},
                 lualine_x = {
-                    function () return os.date("%H:%M", os.time()) end,
                     'filetype'
                 },
-                lualine_y = { 'progress' },
+                lualine_y = {'progress'},
                 lualine_z = {'location'}
             },
             inactive_sections = {
