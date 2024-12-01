@@ -1,4 +1,5 @@
-vim.g.mapleader = " "
+vim.g.mapleader      = " "
+vim.g.localmapleader = " "
 
 vim.o.signcolumn     = 'yes'
 vim.o.clipboard      = "unnamedplus"
@@ -26,6 +27,12 @@ vim.o.foldcolumn     = '1'
 vim.o.foldmethod     = "expr"
 vim.o.fillchars      = "foldopen:,foldclose:,foldsep: "
 vim.o.foldexpr       = "nvim_treesitter#foldexpr()"
+
+vim.opt.updatetime   = 250
+vim.opt.timeoutlen   = 300
+
+vim.opt.scrolloff    = 10
+vim.opt.cursorline = true
 
 require("salim.lazy_init")
 require("salim.remap")
