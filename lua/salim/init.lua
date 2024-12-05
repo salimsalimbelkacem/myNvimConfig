@@ -34,5 +34,8 @@ vim.opt.timeoutlen   = 300
 vim.opt.scrolloff    = 10
 vim.opt.cursorline = true
 
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
 require("salim.lazy_init")
 require("salim.remap")

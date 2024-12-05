@@ -4,15 +4,14 @@ vim.api.nvim_set_keymap("v","q", "<esc>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', ';', ':', { noremap = false, silent = false })
-
-vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>split term://bash<cr><C-w>J<cmd>resize 5<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>split term://bash<cr><cmd>resize 5<cr>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader><leader>', '<cmd>noh<cr>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', '<C-S>', '<cmd>w<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>w', '<cmd>w<cr>',{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>r', '<C-r>' ,{ noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('n', '<C-q>', '<cmd>q<cr>', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('n', '<C-x>', '<cmd>x<cr>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('v', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'k', 'gk', { noremap = true, silent = true })
