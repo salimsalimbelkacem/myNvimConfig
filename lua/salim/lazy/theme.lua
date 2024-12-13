@@ -3,7 +3,8 @@ return {
     "sho-87/kanagawa-paper.nvim",
     config = function ()
         require("kanagawa-paper").setup({
-            -- transparent_mode = true,
+            transparent = true,
+             dimInactive = false,
         })
         vim.cmd.colorscheme "kanagawa-paper"
     end

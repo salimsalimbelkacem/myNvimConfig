@@ -8,7 +8,7 @@ return {
 	--        "3rd/image.nvim",
     },
     config = function ()
-        vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree action=focus<CR>', { noremap = true, silent = true })
+        vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree action=focus<CR><cmd>setlocal relativenumber<cr>', { noremap = true, silent = true })
         vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree toggle<CR><cmd>setlocal relativenumber<cr>',{ noremap = true, silent = true })
 
         require("neo-tree").setup({
